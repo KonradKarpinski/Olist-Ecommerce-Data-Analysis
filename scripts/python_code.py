@@ -163,12 +163,15 @@ geolocation.to_sql('olist_geolocation_dataset', con=engine, if_exists='replace',
 sellers.to_sql('olist_sellers_dataset', con=engine, if_exists='replace', index=False)
 category_translation.to_sql('product_category_name_translation', con=engine, if_exists='replace', index=False)
 
-#EXPORTING UPDATED DATA FILES FOR EXCEL AND EXCEL POWER QUERY ANALYSIS
+#EXPORTING UPDATED DATA FILES FOR EXCEL, EXCEL POWER QUERY AND POWER BI ANALYSIS
 
 orders.to_csv('olist_orders_cleaned.csv', index=False)
 order_payments.to_csv('olist_order_payments_cleaned.csv', index=False)
 order_items.to_csv('olist_order_items_cleaned.csv', index=False)
 customers.to_csv('olist_customers_cleaned.csv', index=False)
+products.to_csv('olist_products_cleaned.csv', index=False)
+category_translation.to_csv('olist_category_translation_cleaned.csv', index=False)
+sellers.to_csv('olist_sellers_cleaned.csv', index=False)
 
 #============================================================
 #Task 1: Revenue & Sales Trend / Step B: Smoothed Sales Trend
