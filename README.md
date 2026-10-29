@@ -460,8 +460,7 @@ To provide management and stakeholders with an interactive overview of core busi
 Data transformations included standardizing naming conventions – removing snake_case from payment types and product categories. This clean data model powers a dynamic Power BI dashboard featuring three primary KPI cards (Total revenue, Average order Value, and Number of orders), a combination chart for sales trends over time, a Top 10 product category ranking, and a payment method breakdown. The report includes interactive slicers for dynamic time and geographic (customer state) filtering.
 
 #### **Visual Result:**
-![Task 7 Results](images/Task6_Query4.png)
-![Task 7 Results](images/Task6_Excel.png)
+![Task 7 Results](images/Task_7_BI.png)
 
 #### **Business Insights:**
 Credit cards are the overwhelmingly dominant payment method used by customers, generating the vast majority of total revenue. The overall sales trend shows strong, consistent growth throughout 2017, peaking in Q1/Q2 of 2018, with the "Health & Beauty" and "Watches & Gifts" categories driving the highest overall revenue for the platform. Note: the sharp drop in Q4 2018 is due to the dataset ending in early September, not an actual decline in sales.
@@ -477,8 +476,7 @@ To provide the operations and supply chain teams with a spatial analysis tool to
 Several steps were taken to prepare this dashboard. First, the location data was updated with a ", Brazil" tag to fix mapping errors. Next, bi-directional filtering was enabled in the data model, and custom DAX measures were created to calculate delivery times and classify delivered orders as "Local" or "Interstate". On the map, bubble size shows the total order volume, while color coding highlights delivery delays. Everything can be easily filtered using the Delivery type slicer.
 
 #### **Visual Result:**
-![Task 8 Results](images/Task6_Query4.png)
-![Task 8 Results](images/Task6_Excel.png)
+![Task 8 Results](images/Task_8_BI.png)
 
 #### **Business Insights:**
 The vast majority of customer orders are concentrated in the southeastern coastal regions (e.g., São Paulo, Rio de Janeiro), which generally experience fast and efficient shipping. However, the map clearly shows that interstate shipments and deliveries to northern regions suffer from significantly longer transit times, highlighting key areas for supply chain optimization.
