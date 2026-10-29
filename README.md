@@ -17,6 +17,8 @@ This project was developed as a practical exercise to master end-to-end business
 * 💾 **SQL Queries:** [analysis_queries.sql](scripts/analysis_queries.sql)
 * ⚙️ **Excel Power Query Scripts:** [excel_power_query_scripts.md](scripts/excel_power_query_scripts.md)
 * 📊 **Excel Dashboard & Simulator:** [excel_sales_logistics.xlsx](files/excel_sales_logistics.xlsx)
+* 📄 **Power BI Report (PDF):** [powerbi_dashboards.pdf](files/powerbi_dashboards.pdf)
+* 📄 **Power BI Source File:** [powerbi_dashboards.pbix](https://drive.google.com/file/d/1ppO_o12ejP3xCBKmZ-SBDhSp4szNl90O/view?usp=sharing)
 
 ---
 
