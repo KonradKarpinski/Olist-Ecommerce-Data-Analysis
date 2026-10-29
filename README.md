@@ -124,7 +124,7 @@ The script merges order data with items, converts purchase timestamps to date ob
 ![Task 1 Results](images/Figure_6.png)
 
 #### **Business Insights:**
-Applying a 7-day rolling window effectively eliminates the daily noise caused by standard weekly shopping habits (e.g., weekend transaction dips). This exposes the true, smoothed growth trajectory of the platform, providing a much more reliable foundation for forecasting warehouse staffing and inventory levels ahead of major shopping events. Note: The sharp drop in Q4 2018 is due to the dataset ending in early September, not an actual decline in sales.
+Applying a 7-day rolling window effectively eliminates the daily noise caused by standard weekly shopping habits (e.g., weekend transaction dips). This exposes the true, smoothed growth trajectory of the platform, providing a much more reliable foundation for forecasting warehouse staffing and inventory levels ahead of major shopping events. Note: the sharp drop in Q4 2018 is due to the dataset ending in early September, not an actual decline in sales.
 
 ---
 
@@ -447,6 +447,40 @@ The backend was prepared using Power Query to merge datasets and remove unnecess
 
 #### **Business Insights:**
 The simulation matrix clearly shows that offering shipping discounts to customers above the 15% threshold (marked in red) risks severe margin loss. For states with high shipping volumes like Rio de Janeiro (RJ), uncontrolled shipping promotions can lead to massive capital drain.
+
+---
+
+# 🖥️ Task 7: Executive Sales Dashboard
+## Power BI
+#### **Objective:**
+To provide management and stakeholders with an interactive overview of core business performance, allowing them to monitor key sales KPIs, revenue trends over time, product category profitability and payment methods usage.
+
+#### **Analysis & Results:**
+Data transformations included standardizing naming conventions – removing snake_case from payment types and product categories. This clean data model powers a dynamic Power BI dashboard featuring three primary KPI cards (Total revenue, Average order Value, and Number of orders), a combination chart for sales trends over time, a Top 10 product category ranking, and a payment method breakdown. The report includes interactive slicers for dynamic time and geographic (customer state) filtering.
+
+#### **Visual Result:**
+![Task 7 Results](images/Task6_Query4.png)
+![Task 7 Results](images/Task6_Excel.png)
+
+#### **Business Insights:**
+Credit cards are the overwhelmingly dominant payment method used by customers, generating the vast majority of total revenue. The overall sales trend shows strong, consistent growth throughout 2017, peaking in Q1/Q2 of 2018, with the "Health & Beauty" and "Watches & Gifts" categories driving the highest overall revenue for the platform. Note: the sharp drop in Q4 2018 is due to the dataset ending in early September, not an actual decline in sales.
+
+---
+
+# 🗺️ Task 8: Delivery performance analysis
+## Power BI
+#### **Objective:**
+To provide the operations and supply chain teams with a spatial analysis tool to monitor geographical delivery performance, track average transit times, and identify regional logistics bottlenecks across Brazil.
+
+#### **Analysis & Results:**
+Several steps were taken to prepare this dashboard. First, the location data was updated with a ", Brazil" tag to fix mapping errors. Next, bi-directional filtering was enabled in the data model, and custom DAX measures were created to calculate delivery times and classify delivered orders as "Local" or "Interstate". On the map, bubble size shows the total order volume, while color coding highlights delivery delays. Everything can be easily filtered using the Delivery type slicer.
+
+#### **Visual Result:**
+![Task 8 Results](images/Task6_Query4.png)
+![Task 8 Results](images/Task6_Excel.png)
+
+#### **Business Insights:**
+The vast majority of customer orders are concentrated in the southeastern coastal regions (e.g., São Paulo, Rio de Janeiro), which generally experience fast and efficient shipping. However, the map clearly shows that interstate shipments and deliveries to northern regions suffer from significantly longer transit times, highlighting key areas for supply chain optimization.
 
 ---
 
