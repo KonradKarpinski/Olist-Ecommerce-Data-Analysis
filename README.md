@@ -124,7 +124,7 @@ The script merges order data with items, converts purchase timestamps to date ob
 ![Task 1 Results](images/Figure_6.png)
 
 #### **Business Insights:**
-Applying a 7-day rolling window effectively eliminates the daily noise caused by standard weekly shopping habits (e.g., weekend transaction dips). This exposes the true, smoothed growth trajectory of the platform, providing a much more reliable foundation for forecasting warehouse staffing and inventory levels ahead of major shopping events.
+Applying a 7-day rolling window effectively eliminates the daily noise caused by standard weekly shopping habits (e.g., weekend transaction dips). This exposes the true, smoothed growth trajectory of the platform, providing a much more reliable foundation for forecasting warehouse staffing and inventory levels ahead of major shopping events. Note: The sharp drop in Q4 2018 is due to the dataset ending in early September, not an actual decline in sales.
 
 ---
 
